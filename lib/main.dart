@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:testdemoflutterapps/onbording_screen/onboarding_screen.dart';
+import 'package:testdemoflutterapps/ecommerce_app_ui.dart/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const OnboardingScreen(),
+      home: const ModanisaHomePage(),
     );
   }
 }
