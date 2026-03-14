@@ -17,13 +17,34 @@ class _CustomScrollViewSimpleState extends State<CustomScrollViewSimple> {
         slivers: [
           // SILVER APP BAR
           SliverAppBar(
-            backgroundColor: Color(0xff9AA0A6),
+            backgroundColor: AppColors.bg,
+            surfaceTintColor: AppColors.bg,
             floating: true,
+            // title: const Text(
+            //   "Silver Appbar",
+            //   style: TextStyle(color: Color(0xffF1F3F4)),
+            // ),
+
+            // Collapsing AppBar (Most Popular Feature)
+            expandedHeight: 200,
             pinned: true,
-            clipBehavior: Clip.hardEdge,
-            title: const Text(
-              "Silver Appbar",
-              style: TextStyle(color: Color(0xffF1F3F4)),
+            snap: true,
+            flexibleSpace: FlexibleSpaceBar(
+              expandedTitleScale: 2.5,
+              titlePadding: EdgeInsets.only(left: 10),
+              title: const Text(
+                "Profile",
+                style: TextStyle(color: Color(0xffF1F3F4), fontSize: 24),
+              ),
+              background: Image.network(
+                "https://picsum.photos/400",
+                fit: BoxFit.cover,
+              ),
+              stretchModes: [
+                StretchMode.zoomBackground,
+                StretchMode.fadeTitle,
+                StretchMode.blurBackground,
+              ],
             ),
           ),
 
