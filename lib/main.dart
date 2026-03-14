@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testdemoflutterapps/animatedicon/aminatedicon.dart';
 import 'package:testdemoflutterapps/ecommerce_app_ui.dart/banner2/banner_page.dart';
 import 'package:testdemoflutterapps/ecommerce_app_ui.dart/home_page.dart';
 
@@ -14,10 +15,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const ACwOCarousel(),
+      darkTheme: ThemeData.dark(),
+      // theme: ThemeData(
+
+      //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      // ),
+      home:  AminatediconExample(),
     );
   }
 }
