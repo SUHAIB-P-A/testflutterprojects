@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testdemoflutterapps/animatedicon/aminatedicon.dart';
+import 'package:testdemoflutterapps/custom_scroll_view_learn/animatedlistincustomscreollview.dart';
 import 'package:testdemoflutterapps/custom_scroll_view_learn/custom_scroll_view_simple.dart';
 import 'package:testdemoflutterapps/custom_scroll_view_learn/persist_header.dart';
 import 'package:testdemoflutterapps/ecommerce_app_ui.dart/banner2/banner_page.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
 
       //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       // ),
-      home: PersistHeader(),
+      home: Animatedlistincustomscreollview(),
     );
   }
 }
